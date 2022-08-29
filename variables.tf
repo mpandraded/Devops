@@ -1,15 +1,15 @@
 variable "vpc-cidr" {
-  default     = "10.0.0.0/16"
+  default     = "172.31.0.0/16" //standard aws
   description = "VPC CIDR BLOCK"
   type        = string
 }
 variable "Public_Subnet_Devops_Test" {
-  default     = "10.0.0.0/24"
+  default     = "172.31.0.0/20"
   description = "Public_Subnet"
   type        = string
 }
 variable "Private_Subnet_Devops_Test" {
-  default     = "10.0.2.0/24"
+  default     = "172.31.32.0/20"
   description = "Private_Subnet"
   type        = string
 }
